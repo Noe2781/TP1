@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h1>Disqueria Gunner</h1>
+<div>
+    <p> Cantidad de discos a mostrar </p>
+    <select name="cantidad" id="cantidad">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="7">7</option>
+        <option value="10">10</option>
+
+    </select>
+</div>
+
+<div>
+    <p id="cantidad-discos">Cantidad permitida por cada disco</p>
+    <select name="cantidad-permitida" id="cantidad-permitida">
+    <option value="1">1</option>
+    <option value="15">15</option>
+    <option value="25">25</option>
+    <option value="50">50</option>
+    ></select>
+</div>
+
+<div id="contenedor-imagenes"></div>
+<button onclick="generar()">Generar</button>
+
+<div >
+
+    <P id="Leer-parrafos"> </P>
+</div>
+
+   
+
+
+
+   <script src="algoritmo.js"></script>
+</body>
+</html>

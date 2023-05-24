@@ -1,0 +1,21 @@
+body{
+
+    color: rgb(238, 12, 12); 
+    background-color: black;
+    font-size: larger;
+    display: grid;
+    place-items: center;   
+    
+}
+
+img {
+
+    border-color: rgb(17, 17, 204);
+    border-width: 3px;
+    border-style: double;
+    width: 200px;
+}
+
+div{
+    color: white;
+}
