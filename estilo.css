@@ -14,8 +14,26 @@ img {
     border-width: 3px;
     border-style: double;
     width: 200px;
+    height: 200px;
+    margin: 5px;
+   
 }
 
 div{
     color: white;
+}
+
+
+
+#informacion{
+background-color: lightslategray;
+font-style: italic;
+color: black;
+
+}
+
+#contenedor-imagenes{
+  display: -webkit-inline-box;
+  flex-direction: row;
+      
 }
