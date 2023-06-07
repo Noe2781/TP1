@@ -26,14 +26,51 @@ div{
 
 
 #informacion{
-background-color: lightslategray;
+background-color: rgb(12, 117, 222);
 font-style: italic;
 color: black;
 
 }
 
-#contenedor-imagenes{
+/* #contenedor-imagenes{
   display: -webkit-inline-box;
   flex-direction: row;
       
+} */
+
+#infoParaSeleccionar{
+background-color: red;
+color: black;
+
+ 
+
 }
+
+
+
+#contenedor-imagenes{
+    display: -webkit-inline-box;
+    flex-direction: row;
+
+   
+        
+  }
+
+ 
+   
+/* 
+    .Ninguno{
+        background-color: none;
+ }
+    .Rojo-Amarillo{
+        background-color: red;
+
+ }
+     .Verde-Violeta{
+        background-color: blueviolet;
+ }
+
+     .Azul-Gris{
+        background-color: blue;
+     } */
+

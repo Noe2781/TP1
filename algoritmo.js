@@ -35,6 +35,13 @@ function funciones(){
   
   `;
 
+  const colores = {
+    ninguno:null,
+    "rojo-amarillo":["red" , "yellow"],
+    "azul-verde": ["blue", "green"],
+    "rosa-naranja": ["pink" ,"orange"]
+  };
+
  
 
 for (let i = 0; i < selectCantidad.value; i++) {
@@ -52,22 +59,38 @@ for (let i = 0; i < selectCantidad.value; i++) {
         <button class="boton-comprar">Comprar</button>
  </div>
         `;
-
-
-
+}
+if (i % 2 === 0) {
+  imagen.style.backgroundColor = colores.opcion1[0];
+} else {
+  imagen.style.backgroundColor = colores.opcion1[1];
+      }
+  
+  divImagenes.appendChild(imagen);
 
 }
 
+function cambiarOpciones() {
+  var valor = selectColores.value;
 
+  if (valor === "ninguno") {
+    imagenes = [];
+  } else {
+    imagenes = imagenes;
+
+    if (valor in colores) {
+      colores.opcion1 = colores[valor];
+    }
+  }
 }
 
 
-function cambiarColor(){
- 
-                }
+
+
 
 function generar() {
 funciones();
+cambiarOpciones();
 
 
 }
