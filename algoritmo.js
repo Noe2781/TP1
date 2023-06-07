@@ -35,12 +35,6 @@ function funciones(){
   
   `;
 
-  const colores = {
-    ninguno:null,
-    "rojo-amarillo":["red" , "yellow"],
-    "azul-verde": ["blue", "green"],
-    "rosa-naranja": ["pink" ,"orange"]
-  };
 
  
 
@@ -59,38 +53,46 @@ for (let i = 0; i < selectCantidad.value; i++) {
         <button class="boton-comprar">Comprar</button>
  </div>
         `;
-}
-if (i % 2 === 0) {
-  imagen.style.backgroundColor = colores.opcion1[0];
-} else {
-  imagen.style.backgroundColor = colores.opcion1[1];
-      }
+}}
+
+function cambiarColores(){
+  const divImagenes = document.getElementsByClassName('disco');
+
+  for(let i = 0; i<divImagenes.length;i++) {
+    const disco = divImagenes[i];
+    const numPar = (i + 1) % 2 === 0;
   
-  divImagenes.appendChild(imagen);
+   switch (selectColores.value) {
+    case "Ninguno":
+      if(numPar) {
+        disco.style.backgroundColor = "none";
+      }else{
+        disco.style.backgroundColor = "none";
+      }
+      break;
+    case "Rojo-Amarillo":
+      if(numPar) {
+        disco.style.backgroundColor = "red";
+      }else{
+        disco.style.backgroundColor = "yellow";
+      }
+   
+    default:
+      break;
+   }
+  }} 
 
-}
+  
 
-function cambiarOpciones() {
-  var valor = selectColores.value;
-
-  if (valor === "ninguno") {
-    imagenes = [];
-  } else {
-    imagenes = imagenes;
-
-    if (valor in colores) {
-      colores.opcion1 = colores[valor];
-    }
-  }
-}
 
 
 
 
 
 function generar() {
+
+cambiarColores();
 funciones();
-cambiarOpciones();
 
 
 }
